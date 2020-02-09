@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+      $(document).ready(function() {
+        $("button").click(function() {
+          alert("it is working");
+        });
+
+        $("p").click(function() {
+          alert("p click is working");
+        });
+
+        $("h1,h2, h3, div").click(function() {
+          alert("This jquery by tag name");
+        });
+        //2nd method of writing jquery end here
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>jquery Call by Tag Name</h2>
+      <button>Click to Test</button>
+      <button>Click here to test</button>
+
+      <p>Hello p Click here</p>
+      <p>Hello p Click here</p>
+      <p>Hello p Click here</p>
+
+      <h1>Click here</h1>
+      <h2>Click here</h2>
+      <h3>Click here</h3>
+      <div>
+        Click here
+      </div>
+    </center>
+  </body>
+</html>

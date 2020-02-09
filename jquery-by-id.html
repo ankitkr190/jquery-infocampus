@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+      $(document).ready(function() {
+        $("#one , #two").click(function() {
+          alert("it is working");
+        });
+        $("#three").click(function() {
+          alert("This is for three");
+        });
+
+        //2nd method of writing jquery end here
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>jquery Call by id</h2>
+      <button id="one">Click to Test</button>
+      <button id="two">Click here to test</button>
+      <button id="three">Click to Test</button>
+    </center>
+  </body>
+</html>

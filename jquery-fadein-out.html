@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+      $(document).ready(function() {
+        $("#one").click(function() {
+          $("p").fadeIn("slow");
+        });
+        $("#two").click(function() {
+          $("p").fadeOut("slow");
+        });
+
+        $("#three").click(function() {
+          $("p").fadeToggle("slow");
+        });
+        //speed - "slow"     , "fast"   , 5000  -ms
+
+        //2nd method of writing jquery and here
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>Jquery fadein() , fadeout() , fadetoggle() , Example</h2>
+      <button id="one">Fade in</button>
+      <button id="two">Fade Out</button>
+      <button id="three">Fade Toggle</button>
+
+      <br /><br />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p class="well">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              quaerat eius possimus nostrum exercitationem ipsa corporis
+              adipisci dolor fugit debitis et a praesentium sapiente,
+              dignissimos animi numquam reprehenderit odio minus!
+            </p>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

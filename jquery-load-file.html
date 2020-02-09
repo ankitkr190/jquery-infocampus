@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+
+      $(document).ready(function() {
+        $("#one").click(function() {
+          $("#msg").load("data.txt");
+        });
+
+        $("#two").click(function() {
+          $("#msg").empty();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>Jquery load file Example</h2>
+      <button id="one">Load file</button>
+      <button id="two">Remove file</button>
+
+      <br /><br />
+
+      <div id="msg">
+        <p>hello test <b>How are you</b></p>
+      </div>
+    </center>
+  </body>
+</html>

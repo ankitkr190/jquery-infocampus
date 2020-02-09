@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+      $(document).ready(function() {
+        $("#one").click(function() {
+          $("#p1").hide("slow");
+        });
+        $("#two").click(function() {
+          $(".p2").hide("slow");
+        });
+
+        //speed - "slow"     , "fast"   , 5000  -ms
+
+        //2nd method of writing jquery and here
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>Jquery hide() , show() Example</h2>
+      <button id="one">Hide all p</button>
+      <button id="two">Show all p</button>
+
+      <p id="p1">Hello P1</p>
+      <p id="p1">Hello P2</p>
+      <p class="p2">Hello P3</p>
+      <p class="p2">Hello P4</p>
+      <p class="p2">Hello P5</p>
+    </center>
+  </body>
+</html>

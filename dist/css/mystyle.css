@@ -1,0 +1,7 @@
+.navbar-default {
+    background-color: #3ed0a1bd;
+    border-color: #30712f;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #0e0303cf;
+}

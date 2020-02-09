@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+
+      $(document).ready(function() {
+        $("#one").click(function() {
+          var data = $("#msg").val();
+          alert(data);
+        });
+
+        $("#two").click(function() {
+          var data = $("#msg").val();
+          $("#dmsg").text(data);
+        });
+
+        $("#msg").keyup(function() {
+          var data = $(this).val();
+          $("#dmsg").text(data);
+        });
+
+        $("#three").click(function() {
+          $("#msg").load("data.txt");
+        });
+
+        $("#four").click(function() {
+          $("#msg").empty("");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>Jquery Pick value and assign value example</h2>
+      <button id="one">Pick file</button>
+      <button id="two">Pick & assign</button>
+      <button id="three">Load data from file</button>
+      <button id="four">Remove Contents</button>
+
+      <br /><br />
+
+      <textarea id="msg"></textarea>
+
+      <p id="dmsg"></p>
+    </center>
+  </body>
+</html>

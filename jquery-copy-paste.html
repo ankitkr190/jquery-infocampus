@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+
+      $(document).ready(function() {
+        $("#one").click(function() {
+          var count = $(".gender:checked").length;
+
+          var value = $(".gender:checked").val();
+
+          if (count > 0) {
+            $("#gmsg").text("Your gender is : " + value);
+          } else {
+            $("#gmsg").text("What is your gender ?");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>Jquery Radio - Checkbox Example</h2>
+
+      <p>
+        <input type="radio" class="gender" name="gender" value="M" /> Male
+        <input type="radio" class="gender" name="gender" value="F" /> Female
+      </p>
+      <button id="one">Validate Gender</button>
+      <p id="gmsg"></p>
+    </center>
+  </body>
+</html>

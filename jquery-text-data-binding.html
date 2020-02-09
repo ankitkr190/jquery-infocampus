@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+      $(document).ready(function() {
+        $("#one").click(function() {
+          $("#msg").text("<h2>Hello This is after</h2>");
+        });
+        $("#two").click(function() {
+          $("#msg").html("<h3>Hello This is after</h3>");
+        });
+
+        $("#three").click(function() {
+          var data = $("#msg").text();
+          alert(data);
+        });
+
+        $("#four").click(function() {
+          var data = $("#msg").html();
+          alert(data);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>Jquery Text data binding Example</h2>
+      <button id="one">Assign As text</button>
+      <button id="two">Assign As Html</button>
+      <button id="three">Pick as text</button>
+      <button id="four">Pick as html</button>
+
+      <br /><br />
+
+      <div id="msg">
+        <p>hello test <b>How are you</b></p>
+      </div>
+    </center>
+  </body>
+</html>

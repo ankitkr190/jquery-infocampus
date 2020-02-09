@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="dist/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <script>
+      /*  $(function() {
+              alert("ok1");
+            });   //end of jquery statement
+      */
+      $(document).ready(function() {
+        $("#one").click(function() {
+          $("p").after("<h2>Hello This is after</h2>");
+        });
+        $("#two").click(function() {
+          $("p").before("<h3>Hello This is after</h3>");
+        });
+
+        //speed - "slow"     , "fast"   , 5000  -ms
+
+        //2nd method of writing jquery and here
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>Jquery After , Before Example</h2>
+      <button id="one">Add After</button>
+      <button id="two">Add Before</button>
+
+      <br /><br />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p class="well">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              quaerat eius possimus nostrum exercitationem ipsa corporis
+              adipisci dolor fugit debitis et a praesentium sapiente,
+              dignissimos animi numquam reprehenderit odio minus!
+            </p>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
